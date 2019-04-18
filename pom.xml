@@ -16,6 +16,7 @@
         <module>d3x-morpheus-json/pom.xml</module>
         <module>d3x-morpheus-quandl/pom.xml</module>
         <module>d3x-morpheus-worldbank/pom.xml</module>
+        <module>d3x-morpheus-tigerbroker/pom.xml</module>
         <!--module>d3x-morpheus-docs/pom.xml</module-->
     </modules>
 
