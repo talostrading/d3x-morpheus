@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.d3xsystems</groupId>
     <artifactId>d3x-morpheus</artifactId>
-    <version>1.0.11</version>
+    <version>1.0.12-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -89,15 +89,10 @@
 
 
     <profiles>
-
         <profile>
-
             <id>release</id>
-
             <build>
-
                 <plugins>
-
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
@@ -196,17 +191,14 @@
 
 
     <build>
-
         <pluginManagement>
-
             <plugins>
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.0</version>
                     <configuration>
-                        <release>${jdk.version}</release>
+                        <!-- <release>${jdk.version}</release> -->
                         <fork>false</fork>
                         <showWarnings>true</showWarnings>
                         <debug>true</debug>
@@ -214,7 +206,6 @@
                         <optimize>true</optimize>
                         <showDeprecation>true</showDeprecation>
                     </configuration>
-
                 </plugin>
 
                 <plugin>
