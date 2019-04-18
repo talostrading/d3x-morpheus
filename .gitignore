@@ -29,3 +29,8 @@ hs_err_pid*
 
 **/databases/**/testDb*
 
+target/
+.settings/
+.classpath
+.project
+
