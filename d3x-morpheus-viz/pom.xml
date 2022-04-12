@@ -23,7 +23,7 @@
     <parent>
         <groupId>com.d3xsystems</groupId>
         <artifactId>d3x-morpheus</artifactId>
-        <version>1.0.49</version>
+        <version>1.0.50</version>
     </parent>
 
     <name>d3x-morpheus-viz</name>
@@ -42,6 +42,12 @@
             <groupId>org.jfree</groupId>
             <artifactId>jfreechart</artifactId>
             <version>1.0.19</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jcommon</artifactId>
+                    <groupId>org.jfree</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>

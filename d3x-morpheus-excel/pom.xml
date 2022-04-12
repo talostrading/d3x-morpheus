@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.d3xsystems</groupId>
         <artifactId>d3x-morpheus</artifactId>
-        <version>1.0.49</version>
+        <version>1.0.50</version>
     </parent>
 
     <name>d3x-morpheus-excel</name>
@@ -22,16 +22,17 @@
             <version>${project.version}</version>
         </dependency>
 
+        <!-- version 3.14 used because it's the last version to rely on xml-beans 2.6.0 which we need for EZE / AXIS2 etc -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>5.2.2</version>
+            <version>3.14</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>5.2.2</version>
+            <version>3.14</version>
         </dependency>
 
     </dependencies>

@@ -35,7 +35,6 @@ import com.d3x.morpheus.range.Range;
 import com.d3x.morpheus.util.IO;
 import com.d3x.morpheus.util.Resource;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;
@@ -159,17 +158,17 @@ public class ExcelSource implements DataFrameSource<Integer,String, ExcelSource.
     private Object getCellValue(Cell cell, FormulaEvaluator evaluator) {
         if (cell == null) {
             return null;
-        } else if (cell.getCellType() == CellType.BOOLEAN) {
+        } else if (cell.getCellType() == Cell.CELL_TYPE_BOOLEAN) {
             return cell.getBooleanCellValue();
-        } else if (cell.getCellType() == CellType.STRING) {
+        } else if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
             return cell.getRichStringCellValue().getString();
-        } else if (cell.getCellType() == CellType.NUMERIC && DateUtil.isCellDateFormatted(cell)) {
+        } else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC && DateUtil.isCellDateFormatted(cell)) {
             return cell.getDateCellValue();
-        } else if (cell.getCellType() == CellType.NUMERIC) {
+        } else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {
             return cell.getNumericCellValue();
-        } else if (cell.getCellType() == CellType.FORMULA) {
+        } else if (cell.getCellType() == Cell.CELL_TYPE_FORMULA) {
             return getCellValue(evaluator.evaluateInCell(cell), evaluator);
-        } else if (cell.getCellType() == CellType.BLANK) {
+        } else if (cell.getCellType() == Cell.CELL_TYPE_BLANK) {
             return null;
         } else {
             return null;
