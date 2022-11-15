@@ -41,7 +41,7 @@ pipeline {
       }
       changed {
         emailext to: "michele@d3xsystems.com zav@d3xsystems.com scott@d3xsystems.com",
-            subject: "D3X-CORE Build ${currentBuild.currentResult}",
+            subject: "D3X-MORPHEUS Build ${currentBuild.currentResult}",
                body: "Build <b>${currentBuild.currentResult}</b>:<br><br>More Info can be found here: <a href='${env.BUILD_URL}'>${env.JOB_NAME}</a><br>"
       }
   }
