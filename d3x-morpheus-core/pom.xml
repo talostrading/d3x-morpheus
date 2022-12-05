@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.d3xsystems</groupId>
         <artifactId>d3x-morpheus</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.1</version>
     </parent>
 
     <name>d3x-morpheus-core</name>
@@ -37,7 +37,7 @@
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-            <version>2.9.0</version>
+            <version>2.10</version>
         </dependency>
 
         <dependency>
@@ -50,14 +50,14 @@
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
-            <version>3.36.0.3</version>
+            <version>3.40.0.0</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>2.1.212</version>
+            <version>2.1.214</version>
             <scope>test</scope>
         </dependency>
 

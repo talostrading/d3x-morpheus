@@ -1,3 +1,0 @@
-## Quandl
-
-To be completed...

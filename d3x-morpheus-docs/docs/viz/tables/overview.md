@@ -1,5 +1,0 @@
-## Tables
-
-### Swing
-
-### HTML

@@ -5,17 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.d3xsystems</groupId>
     <artifactId>d3x-morpheus</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>d3x-morpheus-core/pom.xml</module>
-        <module>d3x-morpheus-viz/pom.xml</module>
-        <module>d3x-morpheus-excel/pom.xml</module>
-        <module>d3x-morpheus-json/pom.xml</module>
-        <module>d3x-morpheus-quandl/pom.xml</module>
-        <module>d3x-morpheus-worldbank/pom.xml</module>
-        <module>d3x-morpheus-guava/pom.xml</module>
+        <module>d3x-morpheus-core</module>
+        <module>d3x-morpheus-viz</module>
+        <module>d3x-morpheus-excel</module>
+        <module>d3x-morpheus-json</module>
+        <module>d3x-morpheus-quandl</module>
+        <module>d3x-morpheus-worldbank</module>
+        <module>d3x-morpheus-guava</module>
     </modules>
 
     <name>d3x-morpheus</name>
@@ -159,13 +159,13 @@
                     <plugin>
                         <groupId>org.projectlombok</groupId>
                         <artifactId>lombok-maven-plugin</artifactId>
-                        <version>1.18.6.0</version>
+                        <version>1.18.20.0</version>
                     </plugin>
 
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.3.2</version>
+                        <version>3.4.1</version>
                         <configuration>
                             <show>private</show>
                             <nohelp>true</nohelp>
@@ -233,7 +233,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>3.3.0</version>
                     <configuration>
                         <encoding>UTF-8</encoding>
                     </configuration>
@@ -258,7 +258,7 @@
                             <path>
                                 <groupId>org.projectlombok</groupId>
                                 <artifactId>lombok</artifactId>
-                                <version>1.18.22</version>
+                                <version>1.18.24</version>
                             </path>
                         </annotationProcessorPaths>
                     </configuration>
@@ -287,7 +287,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.2.2</version>
+                    <version>3.3.0</version>
                     <configuration>
                         <archive>
                             <manifest>
@@ -351,7 +351,7 @@
                 <plugin>
                     <groupId>org.owasp</groupId>
                     <artifactId>dependency-check-maven</artifactId>
-                    <version>7.1.1</version>
+                    <version>7.3.2</version>
                     <configuration>
                         <failBuildOnCVSS>8</failBuildOnCVSS>
                         <suppressionFile>${project.basedir}/suppression.xml</suppressionFile>
@@ -385,7 +385,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.3.0</version>
             </plugin>
 
             <plugin>
@@ -403,7 +403,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.2</version>
+                <version>3.3.0</version>
             </plugin>
 
             <plugin>

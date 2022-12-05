@@ -1,3 +1,0 @@
-## Google Finance
-
-To be completed...
