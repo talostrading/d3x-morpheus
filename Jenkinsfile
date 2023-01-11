@@ -15,6 +15,11 @@ pipeline {
         MAVEN_ARGS="-T 8 -Djava.io.tmpdir=$TMP_DIR -Dfile.encoding=UTF-8 -Djava.awt.headless=true -Dquandl.api.key=JhaRv9Z_oddLQj3PRMVf"
     }
 
+    options {
+        parallelsAlwaysFailFast()
+        disableConcurrentBuilds()
+    }
+
     stages {
         stage ('Build') {
             steps {
